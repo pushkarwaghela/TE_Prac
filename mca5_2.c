@@ -5,7 +5,8 @@ int main(void) {
     P1DIR |= 0x40;
     P1REN |= 0x08;
     P1OUT |= 0x08;
-
+    P1DIR |= Ox00;
+    P1IN | = 0X08;
     while (1) {
         if (P1IN & BIT3)
             P1OUT |= BIT6;
